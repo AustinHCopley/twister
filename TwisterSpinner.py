@@ -22,8 +22,9 @@ class Twister():
     def toStr(self, bodypart, color):
         print("  Round", str(self.turn) + ":", bodypart, "-->",  color, "\n")
 
-if __name__ == "__main__":
 
+def main():
+    
     twister = Twister(0)
     skip = ""
     userIn = input("<< Press enter to spin. Enter \".\" to skip prev turn. Enter anything else to quit. >> ")
@@ -46,3 +47,8 @@ if __name__ == "__main__":
 
         else:
             skip = ""
+
+
+if __name__ == "__main__":
+    main()
+    
